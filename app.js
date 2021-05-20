@@ -3,12 +3,14 @@ let playerSelection;
 let computerScore = 0;
 let userScore = 0;
 
+// Get a random gesture in an array for the computers choice
 function computerPlay() {
   let gestures = ["rock", "paper", "scissors"];
   // return at random "rock", "paper", or "scissors"
   return gestures[Math.floor(Math.random() * gestures.length)];
 }
 
+// Play a round of the game
 function playRound(playerSelection, computerSelection) {
   computerSelection = computerPlay();
   playerSelection = prompt(
@@ -54,6 +56,8 @@ function playRound(playerSelection, computerSelection) {
   return userScore;
   return computerScore;
 }
+
+// Check to see who wins after a 5 round game
 
 function game() {
   for (let i = 0; i < 5; i++) {
