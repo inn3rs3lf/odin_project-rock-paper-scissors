@@ -50,6 +50,9 @@ function playRound(playerSelection, computerSelection) {
   } else if (playerSelection === "PAPER" && computerSelection === "paper") {
     console.log("It's a draw!");
   }
+
+  return userScore;
+  return computerScore;
 }
 
 function game() {
@@ -63,7 +66,7 @@ function game() {
     );
   } else if (computerScore > userScore) {
     console.log(
-      `Congratulations, the Computer beat the User with a score of ${computerScore} to ${userScore}!`
+      `Better luck next time! The Computer beat the User with a score of ${computerScore} to ${userScore}!`
     );
   } else {
     console.log(
